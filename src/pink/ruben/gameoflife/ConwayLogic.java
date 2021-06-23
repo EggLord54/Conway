@@ -29,9 +29,6 @@ public class ConwayLogic {
             for (int j = 0; j < currentBoard[i].length; j++) {
                 int neighbours = countNeighbours(i, j);
 
-//                if (isAlive(i, j))
-//                    System.out.println(i + ", " + j + ": " + neighbours);
-
                 if (isAlive(i, j) && neighbours == 1 || neighbours == 0) {
                     tempBoard[i][j] = false;
                 }
